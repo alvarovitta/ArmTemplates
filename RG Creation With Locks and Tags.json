@@ -1,0 +1,97 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "containerSasToken": {
+            "value": "[SasToken]"
+        },
+        "rgLocation": {
+            "value": "canadacentral"
+        },
+        "rgNames": {
+            "value": [
+                {
+                    "resourceGroup": "AvS-AppLab1-RG"
+                },
+                {
+                    "resourceGroup": "AvSPaZFwRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvS-PawRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSPrivFwRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSKvRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSPerfLogRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSSecLogRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSCrmRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSCoreVnetRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSPaaSVnetRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSIaaSVnetRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSStorageRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSBackupRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSRDSRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSADDSRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSFeRG",
+                    "lock": "CanNotDelete"
+                },
+                {
+                    "resourceGroup": "AvSAppRG",
+                    "lock": "CanNotDelete"                
+                 },
+                {
+                    "resourceGroup": "AvSBeRG",
+                    "lock": "CanNotDelete"
+                }  
+            ]
+        },
+        "tagValues": {
+            "value": {
+                "Owner": "alvitta@microsoft.com",
+                "CostCenter": "1234",
+                "Enviroment": "Sandbox",
+                "Classification": "Unclassified",
+                "Organizations": "AVDept",
+                "DeploymentVersion": "02-20-2019-01"
+            }
+        }
+    }
+}
